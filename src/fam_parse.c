@@ -105,7 +105,7 @@ parse_iid(const char *field, size_t length, pio_status_t *status)
  * @param length Length of the field.
  * @param status Status of the conversion.
  *
- * @return The parsed csv field, or PIO_UNKOWN along with
+ * @return The parsed csv field, or PIO_UNKNOWN along with
  *         status = PIO_ERROR if it could not be parsed.
  */
 static enum sex_t
@@ -114,7 +114,7 @@ parse_sex(const char *field, size_t length, pio_status_t *status)
     if( length != 1 )
     {
         *status = PIO_ERROR;
-        return PIO_UNKOWN;
+        return PIO_UNKNOWN;
     }
 
     *status = PIO_OK;
@@ -128,7 +128,7 @@ parse_sex(const char *field, size_t length, pio_status_t *status)
     }
     else
     {
-        return PIO_UNKOWN;
+        return PIO_UNKNOWN;
     }
 }
 

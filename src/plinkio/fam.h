@@ -25,7 +25,7 @@ enum sex_t
 {
     PIO_MALE,
     PIO_FEMALE,
-    PIO_UNKOWN
+    PIO_UNKNOWN
 };
 
 /**
@@ -75,7 +75,7 @@ struct pio_sample_t
     enum sex_t sex;
 
     /**
-     * Affection of the individuals, case, control or unkown. Control
+     * Affection of the individuals, case, control or unknown. Control
      * is always 0 and case always 1.
      */
     enum affection_t affection;

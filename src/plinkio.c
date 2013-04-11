@@ -67,6 +67,7 @@ pio_status_t pio_open_ex(struct pio_file_t *plink_file, const char *fam_path, co
     }
     else
     {
+        printf("Error opening FAM\n");
         error = 1;
     }
 
@@ -76,11 +77,13 @@ pio_status_t pio_open_ex(struct pio_file_t *plink_file, const char *fam_path, co
     }
     else
     {
+        printf("Error opening BIM\n");
         error = 1;
     }
 
     if( bed_open( &plink_file->bed_file, bed_path, num_loci, num_samples ) != PIO_OK )
     {
+        printf("Error opening BED\n");
         error = 1;
     }
 
